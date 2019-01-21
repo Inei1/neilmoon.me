@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-import "./App.css";
-import {Home} from "./tabs/Home.js";
+import {BrowserRouter as Router} from "react-router-dom";
+import React, {Component} from "react";
+import Header from "./components/Header";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Home/>
-      </div>
+      <Router>
+        <div>
+          <Header/>
+        </div>
+      </Router>
     );
   }
 }
-
 export default App;

@@ -1,0 +1,9 @@
+.navbar-brand {
+    font-size: 28px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.navbar-button {
+    font-size: 18px;
+}

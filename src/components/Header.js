@@ -1,41 +1,61 @@
+import "./Header.css";
 import {Nav, Navbar, NavItem} from "react-bootstrap";
 import React, {Component} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {LinkContainer} from "react-router-bootstrap";
+import Routing from "./Routing";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 
-export class Header extends Component {
+class Header extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href={"/"}>Neil Moon</a>
-          </Navbar.Brand>
-          <Navbar.Toggle/>
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav>
-            <NavItem eventKey={1} href={"/portfolio"}>
-              Portfolio
-            </NavItem>
-            <NavItem eventKey={2} href={"/resume"}>
-              Resume
-            </NavItem>
-            <NavItem eventKey={3} href={"/about"}>
-              About
-            </NavItem>
-          </Nav>
-          <Nav pullRight>
-            <NavItem eventKey={1} href={"mailto:neilrmoon@gmail.com"}>
-              (Email Icon)
-            </NavItem>
-            <NavItem eventKey={2} href={"https://github.com/Inei1"}>
-              (Github Icon)
-            </NavItem>
-            <NavItem eventKey={3} href={"{https://www.linkedin.com/in/neil-moon"}>
-              (LinkedIn Icon)
-            </NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <Router>
+        <div>
+          <Navbar inverse collapseOnSelect>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <Link className={"navbar-brand"} to={"/"}>Neil Moon</Link>
+              </Navbar.Brand>
+              <Navbar.Toggle/>
+            </Navbar.Header>
+            <Navbar.Collapse>
+              <Nav>
+                <LinkContainer to={"/portfolio"}>
+                  <NavItem eventKey={1}>
+                    <p className={"navbar-button"}>Portfolio</p>
+                  </NavItem>
+                </LinkContainer>
+                <LinkContainer to={"/resume"}>
+                  <NavItem eventKey={2}>
+                    <p className={"navbar-button"}>Resume</p>
+                  </NavItem>
+                </LinkContainer>
+                <LinkContainer to={"/about"}>
+                  <NavItem eventKey={3} href={"/about"}>
+                    <p className={"navbar-button"}>About</p>
+                  </NavItem>
+                </LinkContainer>
+              </Nav>
+              <Nav pullRight>
+                <NavItem eventKey={1} href={"mailto:neilrmoon@gmail.com"}>
+                  <FontAwesomeIcon icon={faEnvelope} size={"2x"}/>
+                </NavItem>
+                <NavItem eventKey={2} href={"https://github.com/Inei1"}>
+                  <FontAwesomeIcon icon={faGithub} size={"2x"}/>
+                </NavItem>
+                <NavItem eventKey={3} href={"https://www.linkedin.com/in/neil-moon"}>
+                  <FontAwesomeIcon icon={faLinkedinIn} size={"2x"}/>
+                </NavItem>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+          <Routing/>
+        </div>
+      </Router>
     );
   }
 }
+
+export default Header;
