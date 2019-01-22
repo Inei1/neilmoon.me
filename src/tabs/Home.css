@@ -1,23 +1,39 @@
-.lead {
+.home {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
+    text-align: center;
 }
 
-.lead-name {
-    text-align: center;
+.home-name {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 8em;
     line-height: 1em;
 }
 
-.lead-title {
-    font-size: 2.25em;
+.home-title {
+    font-size: 3em;
     font-weight: bolder;
 }
 
-.lead-text {
+.home-about {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
     text-align: center;
+    font-size: 1.65em;
+}
+
+.home-action {
+    font-size: 1.65em;
+    margin-top: 5%;
+}
+
+.email-button {
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0.5em 0.8em;
 }
