@@ -27,16 +27,6 @@ class Header extends Component {
                     <p className={"navbar-button"}>Portfolio</p>
                   </NavItem>
                 </LinkContainer>
-                <LinkContainer to={"/resume"}>
-                  <NavItem eventKey={2}>
-                    <p className={"navbar-button"}>Resume</p>
-                  </NavItem>
-                </LinkContainer>
-                <LinkContainer to={"/about"}>
-                  <NavItem eventKey={3} href={"/about"}>
-                    <p className={"navbar-button"}>About</p>
-                  </NavItem>
-                </LinkContainer>
               </Nav>
               <Nav pullRight>
                 <NavItem eventKey={1} href={"mailto:neilrmoon@gmail.com"}>
