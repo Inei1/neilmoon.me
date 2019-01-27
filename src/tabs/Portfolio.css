@@ -1,0 +1,57 @@
+.portfolio {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.project {
+    position: relative;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid darkgray;
+    margin: 25px auto 25px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 2em;
+}
+
+.project-text {
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.project-image {
+    border: 1px solid gray;
+    float: left;
+}
+
+.project-link {
+    font-size: 1.5em;
+}
+
+.discontinued-projects {
+    max-width: 1000px;
+    margin: auto auto auto auto;
+}
+
+.discontinued-project {
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    max-width: 300px;
+    float: left;
+    margin-left: 25px;
+}
+
+.project-title-small {
+    font-size: 1.25em;
+}
+
+.project-text-small {
+    font-size: 1.05em;
+}
+
+.project-link-small {
+    font-size: 1.25em;
+}

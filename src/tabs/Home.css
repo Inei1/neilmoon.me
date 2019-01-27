@@ -1,8 +1,8 @@
 .home {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
+    transform: translate(-33%, -50%);
     text-align: center;
 }
 
@@ -21,14 +21,14 @@
 .home-about {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center;
     font-size: 1.65em;
 }
 
 .home-action {
     font-size: 1.65em;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .email-button {

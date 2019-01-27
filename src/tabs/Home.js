@@ -19,9 +19,6 @@ class Home extends Component {
           <Button className={"resume-button"} bsSize={"large"}
                   href={"https://drive.google.com/file/d/1t4eUCDwdbaY1pJnk4ahAmJr4U8fmjeI-/view?usp=sharing"}
                   bsStyle={"primary"}>Download resume as pdf</Button>
-          <Button className={"resume-button"} bsSize={"large"}
-                  href={"https://drive.google.com/file/d/1xRxCU86UVi58m2BfAlpry5XgXYdAf2RT/view?usp=sharing"}
-                  bsStyle={"primary"}>Download LaTeX source for resume</Button>
         </ButtonToolbar>
       </div>
     );
