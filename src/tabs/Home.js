@@ -7,14 +7,11 @@ class Home extends Component {
     return (
       <div className={"home"}>
         <p className={"home-name"}>Neil Moon</p>
-        <p className={"home-title"}>Computer Science Student</p>
-        <p className={"home-about"}>I'm Neil, a student in computer science at California State University, East Bay.
-          I enjoy writing challenging software projects that have practical uses. My goal is to always be learning,
-          whether it be new tech stacks, new programming methods, or something else entirely. A recent project of mine
-          is AutomaticBrowserLogin, a tool for automatically opening and logging in to web browsers.</p>
-        <p className={"home-action"}>Want to talk?</p>
+        <p className={"home-title"}>Software Engineer</p>
+        <p className={"home-about"}>I'm currently a software engineer at Google. I've been here for about two and a half years, 
+        where I've worked on a variety of projects. Some examples include developing a system to create backend reports for an
+        integration test and contributing to a SQL pipline used to determine prices of hardware in Google datacenters.</p>
         <Button href={"mailto:neilrmoon@gmail.com"} className={"email-button"}>Send an email</Button>
-        <p className={"home-action"}>Looking for my resume?</p>
         <ButtonToolbar className={"resume-buttons"}>
           <Button className={"resume-button"} bsSize={"large"}
                   href={"https://drive.google.com/file/d/1t4eUCDwdbaY1pJnk4ahAmJr4U8fmjeI-/view?usp=sharing"}
