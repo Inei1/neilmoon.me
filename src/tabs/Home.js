@@ -14,7 +14,7 @@ class Home extends Component {
         <Button href={"mailto:neilrmoon@gmail.com"} className={"email-button"}>Send an email</Button>
         <ButtonToolbar className={"resume-buttons"}>
           <Button className={"resume-button"} bsSize={"large"}
-                  href={"https://drive.google.com/file/d/1t4eUCDwdbaY1pJnk4ahAmJr4U8fmjeI-/view?usp=sharing"}
+                  href={"https://drive.google.com/file/d/1J1J-e22yJ_FffszL1pYVVWe-dwbGJAhh/view?usp=sharing"}
                   bsStyle={"primary"}>Download resume as pdf</Button>
         </ButtonToolbar>
       </div>
