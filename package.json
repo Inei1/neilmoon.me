@@ -1,7 +1,7 @@
 {
   "homepage": "http://neilmoon.me",
-  "name": "personalwebsite",
-  "version": "0.1.0",
+  "name": "neilmoonme",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",

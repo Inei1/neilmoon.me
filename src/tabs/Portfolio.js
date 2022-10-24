@@ -1,7 +1,5 @@
 import React, {Component} from "react";
 import "./Portfolio.css";
-import ABLImage from "../resources/AutomaticBrowserLogin.PNG";
-import NMMImage from "../resources/neilmoonme.PNG";
 
 class Portfolio extends Component {
 
