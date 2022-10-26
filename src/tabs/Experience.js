@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import "./Home.css";
+import "./Experience.css";
 import {Button, ButtonToolbar} from "react-bootstrap";
 
-class Home extends Component {
+class Experience extends Component {
 
   render() {
     const experience = [
@@ -26,4 +26,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Experience;

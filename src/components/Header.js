@@ -11,41 +11,48 @@ import {BrowserRouter as Router, Link} from "react-router-dom";
 class Header extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Navbar inverse collapseOnSelect>
-            <Navbar.Header>
-              <Navbar.Brand>
-                <Link className={"navbar-brand"} to={"/"}>Neil Moon</Link>
-              </Navbar.Brand>
-              <Navbar.Toggle/>
-            </Navbar.Header>
-            <Navbar.Collapse>
-              <Nav>
-                <LinkContainer to={"/portfolio"}>
-                  <NavItem eventKey={1}>
-                    <p className={"navbar-button"}>Portfolio</p>
-                  </NavItem>
-                </LinkContainer>
-              </Nav>
-              <Nav pullRight>
-                <NavItem eventKey={1} href={"mailto:neilrmoon@gmail.com"}>
-                  <FontAwesomeIcon icon={faEnvelope} size={"2x"}/>
-                </NavItem>
-                <NavItem eventKey={2} href={"https://github.com/Inei1"}>
-                  <FontAwesomeIcon icon={faGithub} size={"2x"}/>
-                </NavItem>
-                <NavItem eventKey={3} href={"https://www.linkedin.com/in/neil-moon"}>
-                  <FontAwesomeIcon icon={faLinkedinIn} size={"2x"}/>
-                </NavItem>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-          <Routing/>
-        </div>
-      </Router>
+      <div>
+        <Navbar inverse collapseOnSelect>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <Link to={"/"}>Neil Moon</Link>
+            </Navbar.Brand>
+            <Navbar.Toggle/>
+          </Navbar.Header>
+            <Navbar.Text>
+              <Link to={"/portfolio"}>Portfolio</Link>
+            </Navbar.Text>
+            <Nav>
+              <NavItem eventKey={1} href={"mailto:neilrmoon@gmail.com"}>
+                <FontAwesomeIcon icon={faEnvelope} size={"2x"}/>
+              </NavItem>
+              <NavItem eventKey={2} href={"https://github.com/Inei1"}>
+                <FontAwesomeIcon icon={faGithub} size={"2x"}/>
+              </NavItem>
+              <NavItem eventKey={3} href={"https://www.linkedin.com/in/neil-moon"}>
+                <FontAwesomeIcon icon={faLinkedinIn} size={"2x"}/>
+              </NavItem>
+            </Nav>
+        </Navbar>
+        <Routing/>
+      </div>
     );
   }
 }
 
 export default Header;
+
+/*          <LinkContainer to={"/portfolio"}>
+              <NavItem eventKey={1}>
+                <p className={"navbar-button"}>Portfolio</p>
+              </NavItem>
+            </LinkContainer>
+              <NavItem eventKey={1} href={"mailto:neilrmoon@gmail.com"}>
+                <FontAwesomeIcon icon={faEnvelope} size={"2x"}/>
+              </NavItem>
+              <NavItem eventKey={2} href={"https://github.com/Inei1"}>
+                <FontAwesomeIcon icon={faGithub} size={"2x"}/>
+              </NavItem>
+              <NavItem eventKey={3} href={"https://www.linkedin.com/in/neil-moon"}>
+                <FontAwesomeIcon icon={faLinkedinIn} size={"2x"}/>
+              </NavItem>*/
